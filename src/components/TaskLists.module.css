@@ -5,6 +5,7 @@
   gap: 1.5em;
 }
 
+/* 
 .task {
   display: flex;
   align-items: center;
@@ -103,4 +104,4 @@
   color: hsl(var(--accent1));
   font-size: var(--_size);
   text-align: center;
-}
+} */
