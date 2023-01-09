@@ -2,14 +2,16 @@
 import TaskItem from "./TaskItem";
 
 // styles
-import styles from "./TaskList.module.css";
+import styles from "./TaskLists.module.css";
 
 const TaskLists = ({ tasks }) => {
   return (
     <ul className={styles.tasks}>
-      {tasks.map((task) => (
-        <TaskItem key={task.id} task={task} />
-      ))}
+      {tasks
+        .sort((a, b) => b.id - a.id)
+        .map((task) => (
+          <TaskItem key={task.id} task={task} />
+        ))}
     </ul>
   );
 };
